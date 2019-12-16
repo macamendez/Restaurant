@@ -1,0 +1,145 @@
+<html>
+
+<Head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/flexboxgrid.css" type="text/css">
+    <title> Formulario </title>
+</head>
+
+<body class="body_color">
+    <header>
+        <div class="center-lg center-xs center-lg">
+            <div class="header">
+                <!--<h3>Formulario de registro</h3>-->
+                <img src="IMG/logo.png " alt="Logotipo de Tengo Hambre">>
+            </div>
+        </div>
+    </header>
+
+    <!-- metodo POST: envía los datos ocultos a la"" vista del usuario -->
+    <!-- metodo GET: envía los datos a la vista del usuario -->
+    <form method="POST" action="formulario.html">
+        <script src="validarRut.js"></script>
+        <div class="container">
+            <div class="form_registro_usuario center-lg center-xs label">
+                <label form "nombres">Nombre:</label>
+                <input type="text" name="nombres" required pattern="[A-Za-z0-9- ]+" minlenght="2" maxlenght="30" 
+                    placeholder="Primer y segundo nombre">
+                <br>
+                <label form "apellidoPat">Apellido paterno:</label>
+                <input type="text" name="apellidoPat" required pattern="[A-Za-z0-9]+" minlenght="2" maxlenght="15"
+                    placeholder="apellido paterno">
+                <br>
+                <label form "apellidoMat">Apellido materno:</label>
+                <input type="text" name="apellidoMat" required pattern="[A-Za-z0-9]+" minlenght="2" maxlenght="15"
+                    placeholder="apellido materno">
+                <br>
+                <label form "run">RUN:</label>
+                <input type="text" name="run" required oninput="validar_run(run)"
+                    placeholder="Sin puntos y con guíon - Ejemplo: 12345678-9 ">
+                <br>
+                <label form "fechaNac">Fecha de nacimiento:</label>
+                <input type="date" name="fechaNac" required placeholder="">
+                <br>
+                <label form "fono">Fono contacto</label>
+                <input type="text" name="fono" required pattern="[0-9]+" maxlenght="11" placeholder="Fono contacto">
+                <br>
+                <label form "correo">Correo electrónico</label>
+                <input type="text" name="correo" required maxlenght="50" placeholder="Correo">
+                <br>
+                <label form "comuna">Comuna</label>
+                <select name="comuna">
+                    <option selected>Seleccione</option>
+                    <option>Valparaíso</option>
+                    <option> Casablanca </option>
+                    <option> Concón </option>
+                    <option> Viña del Mar </option>
+                    <option> Quilpué </option>
+                    <option> Villa Alemana </option>
+                    <option> Limache </option>
+                    <option> Olmué </option>
+                    <option> Quillota </option>
+                </select>
+
+            </div>
+        </div>
+        <div class="form_product_select center-lg center-xs">
+            <label>Seleccione el o los productos que desea</label>
+            <br><br>
+            <input type="checkbox">
+            <label>Empanada Jamón-Queso</label1>
+                <br>
+                <input type="checkbox">
+            <label>Empanada Napolitana</label1>
+                <br>
+                <input type="checkbox">
+            <label>Empanada Pino</label1>
+                <br>
+                <input type="checkbox">
+                <label>Pizza familiar</label1>
+                    <br>
+                    <input type="checkbox">
+                <label>Pizza mediana</label1>
+                    <br>
+                    <input type="checkbox">
+                <label>Pizza Individual</label1>
+                    <br>
+                    <input type="checkbox">
+                    <label>Completo italiano gigante</label1>
+                        <br>
+                        <input type="checkbox">
+                <label>Completo italian mediano</label1>
+                    <br>
+                        <input type="checkbox">
+                        <label>Papas fritas individual</label1>
+                            <br>
+                            <input type="checkbox">
+                            <label>Coca-Cola Normal 2 lts.</label1>
+                                <br>
+                                <input type="checkbox">
+                                <label>Bebida 2 lts.</label1>
+                                    <br>
+                                    <input type="checkbox">
+                                    <label>Bebida 1 lt.</label1>
+                                        <br>
+                                    <input type="checkbox">
+                                    <label>Bebida medio lt.</label1>
+                                <br><br>
+                                </div>
+
+                                <div class="form_tipo_despacho center-lg center-xs">
+                                <label>Seleccione tipo de despacho</label>
+                                <br><br>
+                                <input type="radio" name "tipoDespacho">
+                                <label>Despacho a domicilio</label>
+                                <br>
+                                <input type="radio" name "tipoDespacho">
+                                <label>Retiro en tienda</label>
+                                <br><br>
+        </div>
+        <!--<select name="Oferta">
+                                <option selected>Seleccione</option>
+                                <option> combo 1 </option>
+                                <option> combo 2 </option>
+                                <option> combo 3 </option>
+                                <option> combo 4 </option>
+                            </select>
+                            <br><br>-->
+
+        <label>Háganos saber si tiene algún comentario adicional</label>
+        <br>
+        <!-- rows= alto del cuadro de texto -->
+        <!-- cols= ancho del cuadro de texto -->
+        <textarea rows="5" cols="60"></textarea>
+
+
+        <br><br><br>
+        <button type"submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>

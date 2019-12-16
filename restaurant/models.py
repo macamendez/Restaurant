@@ -16,6 +16,6 @@ class Restaurant(models.Model):
         self.save()
 
     def __str__(self):
-        return self.tengo_hambre
+        return self.title
 
 # Create your models here.
